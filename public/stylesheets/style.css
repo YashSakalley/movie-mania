@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn-history {
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  transition: 0.3s ease-in;
+}
+
+.btn-history:hover{
+  color: white;
+}
+
+.movie-history, .movie-history-small {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.movie-history-small {
+  font-size: 18px;
+}
+
+.movie-history:hover, .movie-history-small:hover{
+  background-color: #e3e3e3;
+}
+
+.no-profile {
+  float: right;
+  width: 150px;
+  transform: scale(0.9);
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
+.no-profile img {
+  transform: scale(0.9);
+  width: 100%;
+  height: 100%;
+}
+
+.search-icon {
+  float: right;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 0 0 100% 100%;
+  right: 20px;
+  color: white;
+  font-size: 5px;
+  background-color: #343a40;
+  width: 100px;
+  text-align: center;
+}
+
+.heading {
+  background: rgba(0,0,0,0.3);
+  height: 50px;
+  /*line-height: 55px;*/
+  font-size: 32px;
+  color: rgb(200,200,200);
+  letter-spacing: 5px;"
+  word-wrap: normal;
+}
+.slidershow{
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+.middle{
+  position: relative;
+
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(100,100,100);
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.3);
+  background: url('https://wallpaperaccess.com/full/550656.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: grey;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bkgrd {
+  color: white;
+}
+
+.links-external {
+  /*margin: 10px;*/
+  margin-left: 0px;
+  /*border: 1px solid red;*/
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 60px;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.links-external img{
+  width: 30%;
+  height: 110%;
+  border-radius: 4px;
+  float: right;
+  transform: scale(1.6);
+}
+
+.links-external:hover {
+  background: black;
+  /*border: 1px solid black;*/
+}
+
+.comments {
+  background: white;
+  color: black;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.frm {
+  margin-bottom: 5px;
+  max-width: 100%;
+  width: 100%
+}
+.frm-head {
+  margin-top: 15px;
+}
+.main {
+  padding: 20px;
+  max-width: 90%;
+  width: 90%;
+  margin: 15px auto;
+  background-color: rgb(240,240,240);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.movie {
+  background-color: #e9ecef;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.movie-img {
+  border: 2px solid black;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+.movie-list {
+  padding: 30px;
+}
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+}
+
+.search-form {
+  margin: 20px;
+  float: right;
+  padding: 0;
+  color: white;
+}
+
+.search-form input[type = "search"] {
+  border: 0;
+  display: inline;
+  text-align: center;
+  margin: 10px auto;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  background: transparent;
+}
+
+.search-form input[type="submit"] {
+
+}
+
+.search-mov {
+  transition: 0.2s ease-in;
+  padding: 0;
+  transform: scale(0.8);
+  font-size: 35px;
+}
+
+.search-img {
+  overflow: hidden;
+  transition: 0.1s ease-in;
+}
+
+.search-mov:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile {
+  padding: 20px;
+}
+
+.box {
+  text-align: center;
+}
+
+.box input {
+  border: 2px solid red;
+}
+
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"], .box input[type = "password"], .box input[type = "email"]{
+  border: 0;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus, .box input[type = "password"]:focus, .box input[type = "email"]:focus{
+  width: 300px;
+  border-color: #2ecc71;
+  align-self: center;
+}
+
+.box input[type = "submit"]{
+  background-color: grey;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  border: 2px solid grey;
+  padding: 14px 40px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  text-transform: uppercase;
+}
+
+.box input[type = "submit"]:hover{
+  background-color: #2ecc71;
+  transform: scale(1.1);
+  border-color: #2ecc71;
+  color: black;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #fcfcfa;
+  }
+}
+i {
+  font-size: 45px;
+  line-height: 15px;
+}
+
+.google {
+  background-color: #c94131;
+}
+
+.facebook {
+    background-color: #3a63bf;
+}
+
+.login-icon {
+  border: 2px solid #f3eded;
+  border-radius: 17px;
+  width: 80%;
+  height: 68px;
+  margin: 8px;
+  font-size: 30px;
+  color: white;
+  line-height: 2;
+  padding: 7px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.login-icon: hover {
+
+}
+
+.scrolltotop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.scolltotop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.plus {
+  font-size: 14px;
+}
+
+.btn-g, .btn-f{
+  font-family: Comic Sans MS;
+  color: rgb(225,225,225);
+  border: solid white 1px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 1500;
+  transition: 0.2s ease-out;
+  margin: 3px;
+  cursor: pointer;
+  float: left;
+  text-decoration: none;
+}
+
+.btn-g:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+  font-size: 18px;
+  transform: scale(1.2);
+}
+
+.btn-f:hover {
+  background-color: #188fff;
+  color: white;
+  border-color: #188fff;
+  font-size: 18px;
+  transform: scale(1.2);
+}
+
+.footer {
+    background-color: #343a40;
+    width: 100%;
+    border-radius: 0px;
+    padding: 25px;
+    padding-left: 35px;
+    text-align: left;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: rgb(215,215,215);
+}
+
+.footer-header {
+  color: rgb(195,195,195);
+}
+
+.col-md {
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+<title>Movies for you</title>
+
+<div class="main">
+  <div style="font-size: 24px;">
+    These are the movies handpicked for you by our Machine Learning Algorithm <br><br>
+  </div>
+  <% if(movies.length == 0) || ((movies.length == 1) && (movies[1] == "")) { %>
+    Couldn't see anything in here?<br>
+    Don't worry. Just keep adding movies to your watch history and leave the rest to us.
+  <% } %>
+  <% movies.forEach(function(movie){ %>
+    <a href="/movie/<%= movie %>" target="_blank">
+      <div class="movie-history">
+        <%= movie %>
+      </div>
+    </a>
+  <% }); %>
+</div>
+
+<% include ./partials/footer %>
